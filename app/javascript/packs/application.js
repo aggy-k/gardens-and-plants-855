@@ -9,3 +9,11 @@ import "channels"
 
 Rails.start()
 Turbolinks.start()
+
+
+
+import { initChoices } from '../components/init-choices.js'
+
+document.addEventListener('turbolinks:load', () => {
+  initChoices();
+})
